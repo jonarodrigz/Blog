@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/contacto.css">
 </head>
 <body>
-    
+    <div id="container">
+        <nav>
+            <div class="nav-left">
+            <ul>
+              <li>
+                <a href="index.html"> Inicio </a>
+              </li>
+              <li>
+                <a href="Blog.html"> Blog </a>
+              </li>
+              <li>
+                <a href="Cursos.html"> Cursos </a>
+              </li>
+              <li>
+                <a href="Contacto.html"> Contacto </a>
+              </li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <ul>
+                <li>
+                    <a href="Registro.html">Registrate</a>
+                </li>
+                <li>
+                    <a href="Login.html">Iniciar Sesion</a>
+                </li>
+            </ul>
+        </div>
+          </nav>
+
+          <div class="contacto-container">
+             
+              <div class="form-contact">
+                <h1 class="titulo">Dejanos un mensaje</h1>
+                  <form action="/" class="formulario">
+                     <input type="text" id="nombre"  class="input input-name" placeholder="Nombre">
+                    <input type="text" id="email"  class="input input-name" placeholder="Email">
+                    <input type="text" id="telefono"  class="input input-name" placeholder="Telefono">
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="20" class="input-area" placeholder="Mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="primary-button btn-enviar">
+                  </form>
+              </div>
+              <div class="redes-contact">
+                <h1 class="titulo">Siguenos</h1>
+                <div class="redes">         
+                             
+                    <img src="../img/insta.png" alt="instagram" >
+                    <img src="../img/fb.png" alt="instagram" >
+                    <img src="../img/link.png" alt="instagram" >
+                    <img src="./img/twitter.png" alt="instagram" >
+                </div>
+              </div>
+          </div>
+    </div>
 </body>
 </html>

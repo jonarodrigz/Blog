@@ -9,6 +9,7 @@
     --sm: 14px;
     --md: 16px;
     --lg: 18px;
+    --xl: 24px;
   }
 
 body{
@@ -18,8 +19,8 @@ body{
 }
 
 #container{
-    
     margin: 0 auto;
+    
 }
 
 .cabecera{
@@ -70,14 +71,10 @@ nav a:hover{
 }
 
 .post-container{
-    display: grid;
-    grid-template-columns: repeat(auto-fill, 240px);
-    gap: 26px;
-    place-content: center;
-    
+  text-align: center;
 }
 .post-card{
-    width: 240px;
+    width: 100%;
 }
 
 aside{
@@ -86,9 +83,9 @@ aside{
     padding: 10px;
 }
 
-.post-card img {
-    width: 240px;
-    height: 120px;
+.post img {
+    width: 100%;
+    height: 250px;
     border-radius: 20px 20px 0 0;
     object-fit: cover;
 }
@@ -98,11 +95,12 @@ aside{
 }
 .titulo{
 margin: 4px 0;
-font-size: var(--md);
+font-size: var(--xl);
 }
 .subtitulo{
 margin: 0px;
 font-size: var(--sm);
+text-align: justify;
 }
 
 .fecha{
@@ -110,7 +108,20 @@ font-size: var(--sm);
     font-weight: bold;
     text-align: center;
 }
-.categorias{
+
+.comentarios-contairner{
+    display: flex;
+    flex-direction: column;
+ }
+ .form-comment{
+    display: flex;
+    flex-direction: column;
+ }
+
+ .comment-info{
+     display: inline;
+ }
+ .categorias{
     padding: 0px;
 }
 .categorias a{
@@ -153,15 +164,38 @@ font-size: var(--sm);
     display: inline;
 }
 
+.btn-enviar{
+    display: flex;
+    justify-content: center;
+}
 .input {
     background-color: var(--text-input-field);
-    border: 1px solid var(--black);
+    border: none;
     border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+    width: calc(50% - 15px);
+    }
+.input-buscar {
+    background-color: var(--text-input-field);
+    border-radius: 8px;
+    border: 1px solid var(--black);
     height: 20px;
     font-size: var(--md);
     padding: 6px;
     margin-bottom: 12px;
     width: calc(60% - 12px);
+  }
+  .input-area {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 150px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
   }
 
   .primary-button {
@@ -174,7 +208,10 @@ font-size: var(--sm);
     font-weight: bold;
     height: 35px;
     width: calc(40% - 12px);
+    
   }
+
+  
 
 footer{
     color: var(--black);

@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+:root {
+    --white: #FFFFFF;
+    --black: #000000;
+    --very-light-pink: #C7C7C7;
+    --text-input-field: #F7F7F7;
+    --blue: #1d0d79;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+  }
+
+body{
+     font-family: 'Quicksand', sans-serif;
+     background-color: var(--white);
+    
+}
+
+#container{
+    margin: 0 auto;
+    
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 24px;
+    border-bottom: 1px solid var(--very-light-pink);
+   }
+
+nav ul {
+    display: inline-block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    float: left;
+    margin-right: 12px;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--blue);
+    font-size: var(--lg);
+    padding: 2px 10px;
+    border-radius: 20px;
+}
+nav a:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+.contacto-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .redes-contact{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: calc(40% - 20px);
+    color: var(--black);
+    border-radius: 8px;
+   
+  }
+  .redes{
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+  }
+  .redes img{
+    width: 50px;
+    margin: 10px;
+  }
+
+.form-contact {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    width: calc(40% - 40px);
+    padding: 20px;
+   
+  }
+  .formulario {
+    display: flex;
+    flex-direction: column;
+}
+     
+  .input {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 30px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+  .input-email {
+    margin-bottom: 22px;
+  }
+  .input-area {
+    background-color: var(--text-input-field);
+    border: none;
+    border-radius: 8px;
+    height: 150px;
+    font-size: var(--md);
+    padding: 6px;
+    margin-bottom: 12px;
+  }
+  .primary-button {
+    background-color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    width: 50%;
+    cursor: pointer;
+    font-size: var(--md);
+    font-weight: bold;
+    height: 50px;
+    
+  }
+
+  .titulo {
+    display: inline;
+    font-size: var(--lg);
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  @media(max-width: 720px ){
+    aside{
+        display: none;
+    }
+    .contacto-container{
+       width: 100%;
+       display: block;
+    }
+    nav{
+        display: none;
+    }
+    
+}
